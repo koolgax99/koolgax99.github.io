@@ -57,19 +57,29 @@ params:
     enabled: true # needs to be explicitly set
     title: koolgax99
     subtitle: "Hi, I am Nihar Sanda"
-    imageUrl: nihar.jpeg
-    imageWidth: 120
-    imageHeight: 120
+    imageUrl: "nihar.webp"
+    imageWidth: 150
+    imageHeight: 150
     imageTitle: Nihar Sanda
     buttons:
       - name: Resume
-        url: posts
-      - name: Projects
-        url: projects
+        url: "NiharSandaResume.pdf"
       - name: About
         url: about
-      - name: Camp+
-        url: https://camplus.network/
+      - name: Projects
+        url: projects
+
+  socialIcons: # optional
+    - name: Github
+      url: "https://github.com/koolgax99"
+    - name: "Twitter"
+      url: "https://twitter.com/nsanda10"
+    - name: "LinkedIn"
+      url: "https://in.linkedin.com/in/nihar-sanda-07ab6118b"
+    - name: "medium"
+      url: "https://koolgax99.medium.com/"
+    - name: "email"
+      url: "nihar.sanda@gmail.com"
 
   analytics:
     google:
