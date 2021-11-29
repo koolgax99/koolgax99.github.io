@@ -120,6 +120,10 @@ menu:
       name: projects
       url: /projects/
       weight: 20
+    - identifier: posts
+      name: posts
+      url: /posts
+      weight: 20
     - identifier: Camp+
       name: Camp+
       url: https://camplus.network/
