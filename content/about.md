@@ -1,4 +1,12 @@
-# About
+---
+title: "About" # in any language you want
+layout: "about" # is necessary
+language: en
+url: "/about"
+summary: About
+
+comments: false
+---
 
 Hi folks! I am Nihar Sanda a Computer science undergrad from IIIT Dharwad. I am a Full Stack Web developer and a data scientist. I am pythonic and also trying to start things up at Camp+
 
