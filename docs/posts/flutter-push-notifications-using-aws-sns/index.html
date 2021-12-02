@@ -37,7 +37,7 @@
 <meta name=twitter:title content="Flutter Push Notification using AWS SNS">
 <meta name=twitter:description content="Sending notifications to your flutter applications using the AWS Simple Notification Services (SNS)">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://koolgax99.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Flutter Push Notification using AWS SNS","item":"https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Flutter Push Notification using AWS SNS","name":"Flutter Push Notification using AWS SNS","description":"Sending notifications to your flutter applications using the AWS Simple Notification Services (SNS)","keywords":["flutter","aws","notifications","fcm"],"articleBody":"Welcome everyone, in this article we will be implementing the Flutter push notifications using the AWS Simple Notification Services (SNS). We will be using Firebase Cloud Messaging as the Service Provider for the Messaging.\nCreating a Flutter Project: Firstly we will create a new project and I will name it flutter_aws_notification.\nYou can give any name to your package. Ensure that you remember it because we will need it while registering our app on Google Firebase.\nCreating a Firebase Project: Now, once the Flutter app is created, let’s go to the Google Firebase. You should have a Google Firebase account for application registration. Let’s create a new project in your firebase account.\nFor steps 2 and 3 in the Firebase click on Next and let it be on default. After the application is registered we will be redirected to the home page of the project.\nNow click on the Android logo on the home page of the project. We will be registering the android app firstly.\nIn the Android Package name enter the same name you entered while creating the flutter application. After that click on the Register button, which will register our flutter application on the firebase.\nConnecting the Firebase Project And Flutter Application After registering we will be given a google-services.json file to download. Download the file and it should be saved our Flutter application, in the following path: android / app / google-services.json\nNow we have to configure our flutter application to connect to our google firebase. In the android/app/src/build.gradle file, add the below line of code just after apply from: $flutterRoot/packages/flutter_tools/gradle/flutter.gradle\n","wordCount":"265","inLanguage":"en","image":"https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/1.png","datePublished":"2021-11-29T00:00:00Z","dateModified":"2021-11-29T00:00:00Z","author":{"@type":"Person","name":"Nihar Sanda"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/"},"publisher":{"@type":"Organization","name":"koolgax99","logo":{"@type":"ImageObject","url":"https://koolgax99.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Flutter Push Notification using AWS SNS","name":"Flutter Push Notification using AWS SNS","description":"Sending notifications to your flutter applications using the AWS Simple Notification Services (SNS)","keywords":["flutter","aws","notifications","fcm"],"articleBody":"Welcome everyone, in this article we will be implementing the Flutter push notifications using the AWS Simple Notification Services (SNS). We will be using Firebase Cloud Messaging as the Service Provider for the Messaging.\nCreating a Flutter Project: Firstly we will create a new project and I will name it flutter_aws_notification.\nYou can give any name to your package. Ensure that you remember it because we will need it while registering our app on Google Firebase.\nCreating a Firebase Project: Now, once the Flutter app is created, let’s go to the Google Firebase. You should have a Google Firebase account for application registration. Let’s create a new project in your firebase account.\nFor steps 2 and 3 in the Firebase click on Next and let it be on default. After the application is registered we will be redirected to the home page of the project.\nNow click on the Android logo on the home page of the project. We will be registering the android app firstly.\nIn the Android Package name enter the same name you entered while creating the flutter application. After that click on the Register button, which will register our flutter application on the firebase.\nConnecting the Firebase Project And Flutter Application After registering we will be given a google-services.json file to download. Download the file and it should be saved our Flutter application, in the following path: android / app / google-services.json\nNow we have to configure our flutter application to connect to our google firebase. In the android/app/src/build.gradle file, add the below line of code just after apply from: $flutterRoot/packages/flutter_tools/gradle/flutter.gradle\n apply plugin: ‘com.google.gms.google-services’\n  Inside “defaultConfig”, configure the applicationId according to the Android Package Name inserted in the firebase\n In the android / build.gradle add the below line in dependencies{……}\n classpath ‘com.google.gms:google-services:4.3.3’\n And finally, we need to edit the permissions of our application in the file AndroidManifest.xml\nintent-filter action android:name=\"FLUTTER_NOTIFICATION_CLICK\" / category android:name=\"android.intent.category.DEFAULT\" / intent-filter Next, we will have to install few of the firebase packages in our flutter application. Add the firebase_messaging and firebase_core packages in your pubspec.yaml.\nOur Flutter Application is successfully connected to the Firebase Project. Our next step is to complete the Flutter Application and adding some simple UI.\nFinishing Flutter Application Create a pages folder in the lib folder of the flutter application. in that folder create a file and name it home_page.dart. And add the below code to the page.\nimport 'package:firebase_messaging/firebase_messaging.dart'; import 'package:flutter/material.dart'; class HomePage extends StatefulWidget { @override _HomePageState createState() = _HomePageState(); } class _HomePageState extends StateHomePage { final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance; @override void initState() { super.initState(); _firebaseMessaging.getToken().then((token) = print(token)); } @override Widget build(BuildContext context) { return Scaffold( appBar: AppBar( title: Text('Flutter SNS Messaging'), ), body: Container( child: Center( child: Text(\"You have been subscribed\"), )), ); } } Let’s connect the home_page.dart and main.dart. Replace the below code in the main.dart\nimport 'package:firebase_core/firebase_core.dart'; import 'package:flutter/material.dart'; import 'package:flutter_sns_notification/pages/home_page.dart'; void main() async { WidgetsFlutterBinding.ensureInitialized(); await Firebase.initializeApp(); runApp(MyApp()); } class MyApp extends StatelessWidget { @override Widget build(BuildContext context) { return MaterialApp( title: 'Material App', home: HomePage(), ); } } All about the code  In the home_page.dart, we created a widget, because, we will tell the user that he has subscribed to the push notification. We have created an instance called _firebaseMessaging using FirebaseMessaging() Using _firebaseMessaging.getToken() we’re registering our app with firebase and we will receive a token which we will print out in the console.  After adding the above codes to their respective pages, our application is ready to run. Now let’s run our application and you should get the UI as shown below.\nNow check your Visual Studio Terminal or the terminal of your IDE and copy the device ID.\nCopy this device ID and save it securely. Before starting the SNS part we will be needing the Server Key from Google Cloud Messaging. So let’s go back to the Firebase console and go to the flutter-sns-notification project. In the navigation menu on the left side click on the Project Overview and go to the Project Settings. In the Project Settings, you can see the Cloud Messaging tab in that tab you could find your own FCM Server ID. Copy the server ID and keep it securely somewhere because we will need that to create a Platform for our application in AWS.\nAfter this lets go to the AWS dashboard and lets start the actual SNS notification creation. Firstly, login to your AWS console and go to the SNS Dashboard. And inside the dashboard click on the Mobile Push Notification option.\nInside the mobile push notification dashboard, we will now create a platform for the application. You can check more details about the AWS SNS in detail here. Next Click on the “Create Platform Application” button and continue by adding the details. Enter the Application Name as aws-sns-notification and in the Push notification platform select the Firebase Cloud Messaging because we have used Firebase Cloud Messaging as our service provider. Next, in the API Key enter the Server Key from the Firebase Console.\nAfter this click on the create button below and your platform will be created.\nNow after the platform is created you will be redirected to the add endpoint dashboard. Here we will add the endpoints to which will be sending the notification. Endpoints are basically the devices here.\nIn the Create Application Endpoint, we have to add the device token which we copied from the VS Code terminal. After adding the token, click on the Create Application Endpoint and your device will be added as an endpoint.\nNow click on the publish message button and you will be redirected to a dashboard to publish your message.\nIn the publish message dashboard, Click on the option “Publish Message” which will send you a notification on the device you used for the project. Here, we are defining our own custom payload for the notification message. A notification message with a Body and a Title will be sent to your Device.\nHurray!!! We have successfully implemented the notification System in SNS and Flutter application. There are many other ways in which the notification system can be implemented in SNS such as the DynamoDB Streams, Lambda Functions. I hope this article has been useful to you.\nI dedicate this article to the entire family of Camp+ for constantly supporting me and inspiring me to do great things in life. Thank you each and everyone for your support and guidance.\nThankyou for reading this article. I hope you find it useful and please share it with your friends and family.\n","wordCount":"1089","inLanguage":"en","image":"https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/1.png","datePublished":"2021-11-29T00:00:00Z","dateModified":"2021-11-29T00:00:00Z","author":{"@type":"Person","name":"Nihar Sanda"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/"},"publisher":{"@type":"Organization","name":"koolgax99","logo":{"@type":"ImageObject","url":"https://koolgax99.github.io/%3Clink%20/%20abs%20url%3E"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -83,7 +83,7 @@ Flutter Push Notification using AWS SNS
 <div class=post-description>
 Sending notifications to your flutter applications using the AWS Simple Notification Services (SNS)
 </div>
-<div class=post-meta><span title="2021-11-29 00:00:00 +0000 UTC">November 29, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Nihar Sanda
+<div class=post-meta><span title="2021-11-29 00:00:00 +0000 UTC">November 29, 2021</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Nihar Sanda
 </div>
 </header>
 <div class=post-content><p><img loading=lazy src=1.png alt="Flutter and AWS SNS Notifications!">
@@ -98,12 +98,139 @@ Sending notifications to your flutter applications using the AWS Simple Notifica
 <p>You can give any name to your package. Ensure that you remember it because we will need it while registering our app on Google Firebase.</p>
 <h2 id=creating-a-firebase-project>Creating a Firebase Project:<a hidden class=anchor aria-hidden=true href=#creating-a-firebase-project>#</a></h2>
 <p>Now, once the Flutter app is created, let&rsquo;s go to the Google Firebase. You should have a Google Firebase account for application registration. Let&rsquo;s create a new project in your firebase account.</p>
+<p><img loading=lazy src=4.png alt="Flutter and AWS SNS Notifications!" title="Click on add project to register our application.">
+</p>
+<p><img loading=lazy src=5.png alt="Flutter and AWS SNS Notifications!" title="Name your project flutter-sns-notification">
+</p>
 <p>For steps 2 and 3 in the Firebase click on Next and let it be on default. After the application is registered we will be redirected to the home page of the project.</p>
+<p><img loading=lazy src=6.png alt="Flutter and AWS SNS Notifications!">
+</p>
 <p>Now click on the Android logo on the home page of the project. We will be registering the android app firstly.</p>
+<p><img loading=lazy src=7.png alt="Flutter and AWS SNS Notifications!">
+</p>
 <p>In the Android Package name enter the same name you entered while creating the flutter application. After that click on the Register button, which will register our flutter application on the firebase.</p>
 <h2 id=connecting-the-firebase-project-and-flutter-application>Connecting the Firebase Project And Flutter Application<a hidden class=anchor aria-hidden=true href=#connecting-the-firebase-project-and-flutter-application>#</a></h2>
 <p>After registering we will be given a google-services.json file to download. Download the file and it should be saved our Flutter application, in the following path: <code>android / app / google-services.json</code></p>
+<p><img loading=lazy src=8.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p><img loading=lazy src=9.png alt="Flutter and AWS SNS Notifications!" title="The folder structure after the google-servies.json is added.">
+</p>
 <p>Now we have to configure our flutter application to connect to our google firebase. In the android/app/src/build.gradle file, add the below line of code just after apply from: <code>$flutterRoot/packages/flutter_tools/gradle/flutter.gradle</code></p>
+<blockquote>
+<p>apply plugin: &lsquo;com.google.gms.google-services&rsquo;</p>
+</blockquote>
+<blockquote>
+<p>Inside &ldquo;defaultConfig&rdquo;, configure the applicationId according to the Android Package Name inserted in the firebase</p>
+</blockquote>
+<p><img loading=lazy src=10.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>In the android / build.gradle add the below line in dependencies{……}</p>
+<blockquote>
+<p>classpath &lsquo;com.google.gms:google-services:4.3.3&rsquo;</p>
+</blockquote>
+<p>And finally, we need to edit the permissions of our application in the file AndroidManifest.xml</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>&lt;</span>intent<span style=color:#f92672>-</span>filter<span style=color:#f92672>&gt;</span>
+  <span style=color:#f92672>&lt;</span>action android:name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;FLUTTER_NOTIFICATION_CLICK&#34;</span> <span style=color:#f92672>/&gt;</span>
+  <span style=color:#f92672>&lt;</span>category android:name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;android.intent.category.DEFAULT&#34;</span> <span style=color:#f92672>/&gt;</span>
+<span style=color:#f92672>&lt;/</span>intent<span style=color:#f92672>-</span>filter<span style=color:#f92672>&gt;</span>
+</code></pre></div><p>Next, we will have to install few of the firebase packages in our flutter application. Add the firebase_messaging and firebase_core packages in your pubspec.yaml.</p>
+<p><img loading=lazy src=11.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Our Flutter Application is successfully connected to the Firebase Project. Our next step is to complete the Flutter Application and adding some simple UI.</p>
+<h2 id=finishing-flutter-application>Finishing Flutter Application<a hidden class=anchor aria-hidden=true href=#finishing-flutter-application>#</a></h2>
+<p>Create a pages folder in the lib folder of the flutter application. in that folder create a file and name it home_page.dart. And add the below code to the page.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#66d9ef>import</span> <span style=color:#e6db74>&#39;package:firebase_messaging/firebase_messaging.dart&#39;</span>;
+<span style=color:#66d9ef>import</span> <span style=color:#e6db74>&#39;package:flutter/material.dart&#39;</span>;
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>HomePage</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>StatefulWidget</span> {
+  <span style=color:#66d9ef>@override</span>
+  <span style=color:#a6e22e>_HomePageState</span> <span style=color:#a6e22e>createState</span>() <span style=color:#f92672>=&gt;</span> <span style=color:#a6e22e>_HomePageState</span>();
+}
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>_HomePageState</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>State</span>&lt;<span style=color:#f92672>HomePage</span>&gt; {
+  <span style=color:#a6e22e>final</span> <span style=color:#a6e22e>FirebaseMessaging</span> <span style=color:#a6e22e>_firebaseMessaging</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>FirebaseMessaging</span>.<span style=color:#a6e22e>instance</span>;
+
+  <span style=color:#66d9ef>@override</span>
+  <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>initState() {</span>
+    <span style=color:#66d9ef>super</span>.<span style=color:#a6e22e>initState</span>();
+    <span style=color:#a6e22e>_firebaseMessaging</span>.<span style=color:#a6e22e>getToken</span>().<span style=color:#a6e22e>then</span>((<span style=color:#a6e22e>token</span>) <span style=color:#f92672>=&gt;</span> <span style=color:#a6e22e>print</span>(<span style=color:#a6e22e>token</span>));
+  }
+
+  <span style=color:#66d9ef>@override</span>
+  <span style=color:#a6e22e>Widget</span> <span style=color:#a6e22e>build</span>(<span style=color:#a6e22e>BuildContext</span> <span style=color:#a6e22e>context</span>) {
+    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>Scaffold</span>(
+      <span style=color:#a6e22e>appBar</span>: <span style=color:#66d9ef>AppBar</span>(
+        <span style=color:#a6e22e>title</span>: <span style=color:#66d9ef>Text</span>(<span style=color:#e6db74>&#39;Flutter SNS Messaging&#39;</span>),
+      ),
+      <span style=color:#a6e22e>body</span>: <span style=color:#66d9ef>Container</span>(
+          <span style=color:#a6e22e>child</span>: <span style=color:#66d9ef>Center</span>(
+        <span style=color:#a6e22e>child</span>: <span style=color:#66d9ef>Text</span>(<span style=color:#e6db74>&#34;You have been subscribed&#34;</span>),
+      )),
+    );
+  }
+}
+
+</code></pre></div><p>Let&rsquo;s connect the home_page.dart and main.dart. Replace the below code in the main.dart</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript>
+<span style=color:#66d9ef>import</span> <span style=color:#e6db74>&#39;package:firebase_core/firebase_core.dart&#39;</span>;
+<span style=color:#66d9ef>import</span> <span style=color:#e6db74>&#39;package:flutter/material.dart&#39;</span>;
+<span style=color:#66d9ef>import</span> <span style=color:#e6db74>&#39;package:flutter_sns_notification/pages/home_page.dart&#39;</span>;
+
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span>() <span style=color:#66d9ef>async</span> {
+  <span style=color:#a6e22e>WidgetsFlutterBinding</span>.<span style=color:#a6e22e>ensureInitialized</span>();
+  <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>Firebase</span>.<span style=color:#a6e22e>initializeApp</span>();
+  <span style=color:#a6e22e>runApp</span>(<span style=color:#a6e22e>MyApp</span>());
+}
+
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MyApp</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>StatelessWidget</span> {
+  <span style=color:#66d9ef>@override</span>
+  <span style=color:#a6e22e>Widget</span> <span style=color:#a6e22e>build</span>(<span style=color:#a6e22e>BuildContext</span> <span style=color:#a6e22e>context</span>) {
+    <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>MaterialApp</span>(
+      <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;Material App&#39;</span>,
+      <span style=color:#a6e22e>home</span>: <span style=color:#66d9ef>HomePage</span>(),
+    );
+  }
+}
+
+</code></pre></div><h3 id=all-about-the-code>All about the code<a hidden class=anchor aria-hidden=true href=#all-about-the-code>#</a></h3>
+<ul>
+<li>In the home_page.dart, we created a widget, because, we will tell the user that he has subscribed to the push notification.</li>
+<li>We have created an instance called _firebaseMessaging using FirebaseMessaging()</li>
+<li>Using _firebaseMessaging.getToken() we&rsquo;re registering our app with firebase and we will receive a token which we will print out in the console.</li>
+</ul>
+<p>After adding the above codes to their respective pages, our application is ready to run. Now let&rsquo;s run our application and you should get the UI as shown below.</p>
+<p><img loading=lazy src=12.jpeg alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Now check your Visual Studio Terminal or the terminal of your IDE and copy the device ID.</p>
+<p><img loading=lazy src=13.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Copy this device ID and save it securely. Before starting the SNS part we will be needing the Server Key from Google Cloud Messaging. So let&rsquo;s go back to the Firebase console and go to the <code>flutter-sns-notification</code> project. In the navigation menu on the left side click on the <code>Project Overview</code> and go to the <code>Project Settings</code>. In the Project Settings, you can see the Cloud Messaging tab in that tab you could find your own FCM Server ID. Copy the server ID and keep it securely somewhere because we will need that to create a Platform for our application in AWS.</p>
+<p><img loading=lazy src=14.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>After this lets go to the AWS dashboard and lets start the actual SNS notification creation. Firstly, login to your AWS console and go to the SNS Dashboard. And inside the dashboard click on the Mobile Push Notification option.</p>
+<p><img loading=lazy src=15.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Inside the mobile push notification dashboard, we will now create a platform for the application. You can check more details about the AWS SNS in detail here. Next Click on the &ldquo;Create Platform Application&rdquo; button and continue by adding the details. Enter the Application Name as aws-sns-notification and in the Push notification platform select the Firebase Cloud Messaging because we have used Firebase Cloud Messaging as our service provider. Next, in the API Key enter the Server Key from the Firebase Console.</p>
+<p><img loading=lazy src=16.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>After this click on the create button below and your platform will be created.</p>
+<p><img loading=lazy src=17.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Now after the platform is created you will be redirected to the add endpoint dashboard. Here we will add the endpoints to which will be sending the notification. Endpoints are basically the devices here.</p>
+<p><img loading=lazy src=19.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>In the Create Application Endpoint, we have to add the device token which we copied from the VS Code terminal. After adding the token, click on the Create Application Endpoint and your device will be added as an endpoint.</p>
+<p><img loading=lazy src=20.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>Now click on the publish message button and you will be redirected to a dashboard to publish your message.</p>
+<p><img loading=lazy src=21.png alt="Flutter and AWS SNS Notifications!">
+</p>
+<p>In the publish message dashboard, Click on the option &ldquo;Publish Message&rdquo; which will send you a notification on the device you used for the project. Here, we are defining our own custom payload for the notification message. A notification message with a Body and a Title will be sent to your Device.</p>
+<p><img loading=lazy src=22.jpeg alt="Flutter and AWS SNS Notifications!" title="The notification will be sent to your device.">
+</p>
+<p>Hurray!!! We have successfully implemented the notification System in SNS and Flutter application. There are many other ways in which the notification system can be implemented in SNS such as the DynamoDB Streams, Lambda Functions. I hope this article has been useful to you.</p>
+<p>I dedicate this article to the entire family of Camp+ for constantly supporting me and inspiring me to do great things in life. Thank you each and everyone for your support and guidance.</p>
+<p>Thankyou for reading this article. I hope you find it useful and please share it with your friends and family.</p>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
