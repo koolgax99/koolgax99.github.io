@@ -27,3 +27,5 @@ Hi folks! I am Nihar Sanda a Computer science undergrad from IIIT Dharwad. I am 
 # Free-Time
 
 To refresh myself from work I play Lawn Tennis or Jog out vibing to J Cole. My passion for photography has always intrigues me to capture beautiful sunsets, humans and sceneries. You can check out few of the shots here.
+
+I am a sports enthusiast, lets talk about F1(MV 33), Tennis, Cricket and Football. I favor the German built more than the JDM's
