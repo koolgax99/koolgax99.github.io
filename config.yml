@@ -24,7 +24,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -43,11 +43,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "nihar-sanda.webp"
+    favicon16x16: "nihar-sanda.webp"
+    favicon32x32: "nihar-sanda.webp"
+    apple_touch_icon: "nihar-sanda.webp"
+    safari_pinned_tab: "nihar-sanda.webp"
 
   label:
     text: "Koolgax99"
@@ -55,11 +55,11 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: koolgax99
-    subtitle: "Hi, I am Nihar Sanda"
-    imageUrl: "nihar.webp"
-    imageWidth: 150
-    imageHeight: 150
+    title: Nihar Sanda
+    # subtitle: "Hi, I am Nihar Sanda"
+    imageUrl: "nihar-sanda.webp"
+    imageWidth: 250
+    imageHeight: 250
     imageTitle: Nihar Sanda
     buttons:
       - name: Resume

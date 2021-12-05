@@ -16,6 +16,8 @@ Hi folks! I am Nihar Sanda a Computer science undergrad from IIIT Dharwad. I am 
 - AI, ML, DL, Pandas, Numpy, SciKit
 - Firebase, AWS, Tableau, PowerBI
 - Flutter
+- Operating Systems, DBMS, Computer Architecture, DSA
+- Shell Scripting, Git, Docker
 
 # Extra-Curricular Activites
 
