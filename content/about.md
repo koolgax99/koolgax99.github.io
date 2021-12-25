@@ -13,18 +13,20 @@ Hi folks! I am Nihar Sanda a Computer science undergrad from IIIT Dharwad. I am 
 # Technologies
 
 - MERN, Laravel, Flask and Django
-- AI, ML, DL, Pandas, Numpy, SciKit
+- AI, ML, DL, NLP, Pandas, Numpy, SciKit, Keras Tensorflow
 - Firebase, AWS, Tableau, PowerBI
 - Flutter
-- Operating Systems, DBMS, Computer Architecture, DSA
+- Operating Systems, DBMS, Computer Architecture, DSA, Computer Networks
 - Shell Scripting, Git, Docker
 
 # Extra-Curricular Activites
 
 - President of Velocity (Web Development Club), IIIT Dharwad
 - Events Management Head of E-Cell, IIIT Dharwad
+- Webmaster of IEEE Computer Society, Banglore Section.
 - Core Committee Member of Data Science and Artificial Intelligence (DSAI) Society, IIIT Dharwad
-- Postman Student Leader
+- Core Member of IEEE Student Branch, IIIT Dharwad and IEEE Computer Society, IIIT Dharwad. 
+- Postman Student Leader and Expert.
 
 # Free-Time
 

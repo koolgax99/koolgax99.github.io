@@ -33,6 +33,13 @@ It is a Machine Learning based house predictor for the people who buy houses tak
 
 Program is built in python environment using python libraries and machine learning concepts. The dataset is cleeaned repeatedely so that it can be readily used by the python program to apply machine learning algorithms. After going through number of regression techniques , finally multiple linear regression algorithm fit close to the dataset. once we have finished the python program we designed API files for the same and took it to the web interface to be readily used in a new or existing systems. The program takes input of your budget and other financial conditions and then gives you the output of the most suitable assets you may own with other benefits. You can test out the website here: [Terra&Tech](https://codecops-hackathon.herokuapp.com/)
 
+## Fruits Image Classifier using VGG16
+![Fruits Image Classifier](/img/image-classifier.png)
+
+I used the Fruits 360 dataset and VGG16 which is a pretrained CNN. Data Augmentation techniques were also implemented in order to fit the model more accurately. The fitting takes a lot of computational power and time.
+
+THe Kaggle notebook for the code can be found here: [Fruits Image Classifier using VGG16](https://www.kaggle.com/niharsanda/fruits-image-classifier-using-vgg16)
+
 ## Covid Tracker
 
 ![Covid Tracker](/img/covid-tracker.png)
