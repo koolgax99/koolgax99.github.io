@@ -9,7 +9,16 @@
       <link>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Grammar Error Correction in Morphologically Rich Languages</title>
+      <link>https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/</guid>
+      <description>Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages</description>
+    </item>
+    
     <item>
       <title>Flutter Push Notification using AWS SNS</title>
       <link>https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/</link>

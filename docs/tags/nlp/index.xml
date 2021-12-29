@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on koolgax99</title>
-    <link>https://koolgax99.github.io/posts/</link>
-    <description>Recent content in Posts on koolgax99</description>
+    <title>NLP on koolgax99</title>
+    <link>https://koolgax99.github.io/tags/nlp/</link>
+    <description>Recent content in NLP on koolgax99</description>
     <image>
       <url>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Grammar Error Correction in Morphologically Rich Languages</title>
       <link>https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/</link>
@@ -17,15 +17,6 @@
       
       <guid>https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/</guid>
       <description>Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages</description>
-    </item>
-    
-    <item>
-      <title>Flutter Push Notification using AWS SNS</title>
-      <link>https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://koolgax99.github.io/posts/flutter-push-notifications-using-aws-sns/</guid>
-      <description>Sending notifications to your flutter applications using the AWS Simple Notification Services (SNS)</description>
     </item>
     
   </channel>
