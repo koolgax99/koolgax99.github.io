@@ -35,7 +35,7 @@
 <meta name=twitter:title content="Understanding Grammar Error Correction in Morphologically Rich Languages">
 <meta name=twitter:description content="Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://koolgax99.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Understanding Grammar Error Correction in Morphologically Rich Languages","item":"https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Understanding Grammar Error Correction in Morphologically Rich Languages","name":"Understanding Grammar Error Correction in Morphologically Rich Languages","description":"Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages","keywords":["NLP","ML","AI"],"articleBody":"In this article we will be discussing the research paper on grammar error correction in morphologically rich languages especially in Russian Languages. The research paper is titled: The Grammar Error Correction in Morphologically Rich Languages: The Case of Russian and it is published in the Journal of Language Technology. The research paper is available here\nRozovskaya and Roth 2019, uses a corpus of the Russian Learner Corpus of Academic Writing (RULEC, 560K words) which is written by students in United States learning Russian.\nRussian language is termed as “Morphologically Rich Language” (MRL’s). The dataset included essays from 12 foreign and 5 heritage Russian speakers which was annotated by 2 native Russian speakers. The essays were annotated and each error was assigned a type which led to the development of error classification schema that addresses errors in morphology, syntax, and word usage, and takes into account linguistic properties of the Russian language.\nThe approaches experimented in the paper are:\n Learner-trained classifiers: Error-specific classifiers trained on learner data Minimal-supervision classifiers: Error-specific classifiers trained on learner and native data with minimal supervision Phrase-based machine translation system  ","wordCount":"183","inLanguage":"en","datePublished":"2021-12-28T00:00:00Z","dateModified":"2021-12-28T00:00:00Z","author":{"@type":"Person","name":"Nihar Sanda"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/"},"publisher":{"@type":"Organization","name":"koolgax99","logo":{"@type":"ImageObject","url":"https://koolgax99.github.io/nihar-sanda.webp"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Understanding Grammar Error Correction in Morphologically Rich Languages","name":"Understanding Grammar Error Correction in Morphologically Rich Languages","description":"Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages","keywords":["NLP","ML","AI"],"articleBody":"In this article we will be discussing the research paper on grammar error correction in morphologically rich languages especially in Russian Languages. The research paper is titled: The Grammar Error Correction in Morphologically Rich Languages: The Case of Russian and it is published in the Journal of Language Technology. The research paper is available here\nRozovskaya and Roth 2019, uses a corpus of the Russian Learner Corpus of Academic Writing (RULEC, 560K words) which is written by students in United States learning Russian.\nRussian language is termed as “Morphologically Rich Language” (MRL’s). The dataset included a subest of RULEC (12,480 sentences, comprising 206K words). Out of which essays from 12 foreign and 5 heritage Russian speakers were slected to be annotated by 2 native Russian speakers. The essays were annotated and each error was assigned a type which led to the development of error classification schema that addresses errors in morphology, syntax, and word usage, and takes into account linguistic properties of the Russian language. The annotated corpus is refereed as RULEC-GEC.\nThe approaches experimented in the paper are:\n Learner-trained classifiers:   In this approach, a special classifer is developed for each error type. The most common errors include noun case, verb aspect, preposition, verb agreement.     Errors Confusion Set     Noun:case {Nom., Gen., Acc., Dat., Inst., Loc.}   Verb agr. (num.) {Singular, Plural}   Verb agr. (gender) {Fem., Masc., Neutral}   Aspect {Perfect, Imperfect}   Prep. {15 prepositions}     Noun Case Errors: The Russian case system consists of Nominative, Genetive, Accusative, Instrumental, Dative, and Locative. To analyze this we have a six-way classifier with each classifier corresponding to a case. However, sometime surface form f the noun can be ambiguous i.e. A word can have 2 or more than 2 cases at once for different contexts. Number and Gender Verb Agreement Errors: In russian verbs are specified for number (singular, plural), gender (feminine, masculine, and neutral), and person. Preposition Errors: In this classifier, we take the most common preposition errors in Russian which is in similar line to the top n most frequent prepositions in English. Verb Aspect Errors: The Russian verb system has three tenses-present, past, and future- and each tense can be expressed in imperfective or perfective aspect.   Minimal-supervision classifiers: Error-specific classifiers trained on learner and native data with minimal supervision\n  Phrase-based machine translation system:\n   This system follows the implementation in Susanto et al. (2014) and is trained using Moses (Koehn et al., 2007).  ","wordCount":"399","inLanguage":"en","datePublished":"2021-12-28T00:00:00Z","dateModified":"2021-12-28T00:00:00Z","author":{"@type":"Person","name":"Nihar Sanda"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/"},"publisher":{"@type":"Organization","name":"koolgax99","logo":{"@type":"ImageObject","url":"https://koolgax99.github.io/nihar-sanda.webp"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -81,19 +81,67 @@ Understanding Grammar Error Correction in Morphologically Rich Languages
 <div class=post-description>
 Understanding the research paper on grammar error correction in morphologically rich languages especially in Russian Languages
 </div>
-<div class=post-meta><span title="2021-12-28 00:00:00 +0000 UTC">December 28, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Nihar Sanda
+<div class=post-meta><span title="2021-12-28 00:00:00 +0000 UTC">December 28, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Nihar Sanda
 </div>
 </header>
 <div class=post-content><p>In this article we will be discussing the research paper on grammar error correction in morphologically rich languages especially in Russian Languages. The research paper is titled: <code>The Grammar Error Correction in Morphologically Rich Languages: The Case of Russian</code> and it is published in the Journal of Language Technology. The research paper is available <a href=https://aclanthology.org/Q19-1001.pdf>here</a></p>
 <p>Rozovskaya and Roth 2019, uses a corpus of the Russian Learner Corpus of Academic Writing (RULEC, 560K
 words) which is written by students in United States learning Russian.</p>
-<p>Russian language is termed as &ldquo;Morphologically Rich Language&rdquo; (MRL&rsquo;s). The dataset included essays from 12 foreign and 5 heritage Russian speakers which was annotated by 2 native Russian speakers. The essays were annotated and each error was assigned a type which led to the development of error classification schema that addresses errors in morphology, syntax, and word usage, and takes into account linguistic properties of the Russian language.</p>
+<p>Russian language is termed as &ldquo;Morphologically Rich Language&rdquo; (MRL&rsquo;s). The dataset included a subest of <a href>RULEC</a> (12,480 sentences, comprising 206K words). Out of which essays from 12 foreign and 5 heritage Russian speakers were slected to be annotated by 2 native Russian speakers. The essays were annotated and each error was assigned a type which led to the development of error classification schema that addresses errors in morphology, syntax, and word usage, and takes into account linguistic properties of the Russian language. The annotated corpus is refereed as <a href=https://github.com/arozovskaya/RULEC-GEC>RULEC-GEC</a>.</p>
 <p>The approaches experimented in the paper are:</p>
 <ol>
-<li>Learner-trained classifiers: Error-specific classifiers trained on learner data</li>
-<li>Minimal-supervision classifiers: Error-specific classifiers trained on learner and native data with minimal supervision</li>
-<li>Phrase-based machine translation system</li>
+<li>Learner-trained classifiers:</li>
 </ol>
+<ul>
+<li>In this approach, a special classifer is developed for each error type. The most common errors include noun case, verb aspect, preposition, verb agreement.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Errors</th>
+<th>Confusion Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Noun:case</td>
+<td>{Nom., Gen., Acc., Dat., Inst., Loc.}</td>
+</tr>
+<tr>
+<td>Verb agr. (num.)</td>
+<td>{Singular, Plural}</td>
+</tr>
+<tr>
+<td>Verb agr. (gender)</td>
+<td>{Fem., Masc., Neutral}</td>
+</tr>
+<tr>
+<td>Aspect</td>
+<td>{Perfect, Imperfect}</td>
+</tr>
+<tr>
+<td>Prep.</td>
+<td>{15 prepositions}</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>Noun Case Errors</code>: The Russian case system consists of Nominative, Genetive, Accusative, Instrumental, Dative, and Locative. To analyze this we have a six-way classifier with each classifier corresponding to a case. However, sometime surface form f the noun can be ambiguous i.e. A word can have 2 or more than 2 cases at once for different contexts.</li>
+<li><code>Number and Gender Verb Agreement Errors</code>: In russian verbs are specified for number (singular, plural), gender (feminine, masculine, and neutral), and person.</li>
+<li><code>Preposition Errors</code>: In this classifier, we take the most common preposition errors in Russian which is in similar line to the top n most frequent prepositions in English.</li>
+<li><code>Verb Aspect Errors</code>: The Russian verb system has three tenses-present, past, and future- and each tense can be expressed in imperfective or perfective aspect.</li>
+</ul>
+<ol start=2>
+<li>
+<p>Minimal-supervision classifiers: Error-specific classifiers trained on learner and native data with minimal supervision</p>
+</li>
+<li>
+<p>Phrase-based machine translation system:</p>
+</li>
+</ol>
+<ul>
+<li>This system follows the implementation in Susanto et al. (2014) and is trained using Moses (Koehn et al., 2007).</li>
+</ul>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
