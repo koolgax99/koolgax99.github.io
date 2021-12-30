@@ -128,3 +128,8 @@ menu:
       name: Camp+
       url: https://camplus.network/
       weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

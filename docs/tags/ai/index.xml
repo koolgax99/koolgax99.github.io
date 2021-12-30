@@ -11,6 +11,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fruits Image Classifier using VGG16</title>
+      <link>https://koolgax99.github.io/posts/fruits-image-classifier-using-vgg16/</link>
+      <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://koolgax99.github.io/posts/fruits-image-classifier-using-vgg16/</guid>
+      <description>Using Fruits image dataset and VGG16 model to classify the fruits</description>
+    </item>
+    
+    <item>
       <title>Understanding Grammar Error Correction in Morphologically Rich Languages</title>
       <link>https://koolgax99.github.io/posts/understanding-grammar-error-correction-in-languages/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
