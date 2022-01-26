@@ -63,7 +63,7 @@ params:
     imageTitle: Nihar Sanda
     buttons:
       - name: Resume
-        url: "NiharSandaResume.pdf"
+        url: "NiharSanda.pdf"
       - name: About
         url: about
       - name: Projects
