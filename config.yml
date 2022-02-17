@@ -68,6 +68,8 @@ params:
         url: about
       - name: Projects
         url: projects
+      - name: 66dayofdata
+        url: posts/journey-of-66-days-of-data
 
   socialIcons: # optional
     - name: Github
@@ -127,6 +129,10 @@ menu:
     - identifier: Camp+
       name: Camp+
       url: https://camplus.network/
+      weight: 30
+    - identifier: 66daysofdata
+      name: 66daysofdata
+      url: /posts/journey-of-66-days-of-data/
       weight: 30
 
 markup:
