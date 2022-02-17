@@ -7,7 +7,7 @@ tags: ["CNN", "ML", "AI", "DL"]
 categories: ["technology"]
 cover:
   image: "66daysofdata-cover.png"
-  relative: true # To use relative path for cover image, used in hugo Page-bundles
+#   relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 ![66 Days of Data!](66daysofdata-cover.png)
