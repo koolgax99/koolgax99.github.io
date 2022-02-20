@@ -22,6 +22,9 @@ In this article, I will be documenting my day to day journey of #66daysofdata st
 
 ### Day 1 - 19th February, 2022
 
+- Revised the various EDA techniques used for Data Visualization.
+  - Link for the resources: [Medium EDA](https://towardsdatascience.com/exploratory-data-analysis-eda-techniques-for-kaggle-competition-beginners-be4237c3c3a9)
+
 ### Day 2 - 20th February, 2022
 
 Do checkout the article everyday if you wanna be a part of my journey for 66 days.
