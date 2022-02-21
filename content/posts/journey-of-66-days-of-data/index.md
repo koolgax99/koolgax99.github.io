@@ -32,8 +32,20 @@ In this article, I will be documenting my day to day journey of #66daysofdata st
   - [Linear Algebra in SVD](https://medium.com/sho-jp/linear-algebra-101-part-9-singular-value-decomposition-svd-a6c53ed2319e)
 
 ### Day 3 - 21st February, 2022
-- Hands on EDA coding on the Zomato Dataset. The dataset can be found here: [Zomato](https://www.kaggle.com/shrutimehta/zomato-restaurants-data) 
+
+- Hands on EDA coding on the Zomato Dataset. The dataset can be found here: [Zomato](https://www.kaggle.com/shrutimehta/zomato-restaurants-data)
+
   - Ref: [Krish Naik EDA on Zomato Dataset] (https://krishnaik.in/2022/02/17/day-1-live-eda-and-feature-engineering/)
+
+- Read an article on the "Curse of Dimensionality Reduction" and why it is important to have lesser optimal features instead of huge number of dimensions. The various methods to solve this problem in case of huge number dimensions are:
+
+  - by the use of Cosine Similarity instead of the usual Euclidean Distance
+  - Prinicipal Component Analysis (PCA)
+  - Dimensionality Reduction using Kernel PCA
+  - Dimensionality Reduction using Random Projection
+  - Dimensionality Reduction using LDA
+
+  - Ref: [Curse of Dimensionality Reduction](https://towardsdatascience.com/curse-of-dimensionality-a-curse-to-machine-learning-c122ee33bfeb)
 
 Do checkout the article everyday if you wanna be a part of my journey for 66 days.
 
