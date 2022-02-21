@@ -27,6 +27,10 @@ In this article, I will be documenting my day to day journey of #66daysofdata st
 
 ### Day 2 - 20th February, 2022
 
+- Today i learnt about the Singular Value Decomposition Technique (SVD) and how it can be used to reduce the dimensionality of the data.
+  - [SVD](https://andrew.gibiansky.com/blog/mathematics/cool-linear-algebra-singular-value-decomposition/)
+  - [Linear Algebra in SVD] (https://medium.com/sho-jp/linear-algebra-101-part-9-singular-value-decomposition-svd-a6c53ed2319e)
+
 Do checkout the article everyday if you wanna be a part of my journey for 66 days.
 
 ## Socials
