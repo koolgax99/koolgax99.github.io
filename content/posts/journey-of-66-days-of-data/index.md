@@ -29,7 +29,7 @@ In this article, I will be documenting my day to day journey of #66daysofdata st
 
 - Today i learnt about the Singular Value Decomposition Technique (SVD) and how it can be used to reduce the dimensionality of the data.
   - [SVD](https://andrew.gibiansky.com/blog/mathematics/cool-linear-algebra-singular-value-decomposition/)
-  - [Linear Algebra in SVD] (https://medium.com/sho-jp/linear-algebra-101-part-9-singular-value-decomposition-svd-a6c53ed2319e)
+  - [Linear Algebra in SVD](https://medium.com/sho-jp/linear-algebra-101-part-9-singular-value-decomposition-svd-a6c53ed2319e)
 
 ### Day 3 - 21st February, 2022
 - Hands on EDA coding on the Zomato Dataset. The dataset can be found here: [Zomato](https://www.kaggle.com/shrutimehta/zomato-restaurants-data) 
