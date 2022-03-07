@@ -126,9 +126,9 @@ In this article, I will be documenting my day to day journey of #66daysofdata st
 
 ### Day 17 - 7th March, 2022
 
-- Dong a quick recap of everything I learnt from Day 1 to Day 15.
+- Doing a quick recap of everything I learnt from Day 1 to Day 15.
   - Its important to revise your stuff regularly in the field of Data Science. I was supposed to revise it on Day 16 but eventually had to learn few things for my project.
-  - No new learning today, but got a much better perspective after revising the previous topics.
+  - No new learning today, but got a much better perspective about the previous topics after revising them.
 
 Do checkout the article everyday if you wanna be a part of my journey for 66 days.
 

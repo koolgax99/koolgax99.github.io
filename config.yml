@@ -68,7 +68,7 @@ params:
         url: about
       - name: Projects
         url: projects
-      - name: 66dayofdata
+      - name: 66daysofdata
         url: posts/journey-of-66-days-of-data
 
   socialIcons: # optional
