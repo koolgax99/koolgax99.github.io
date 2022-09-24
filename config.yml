@@ -115,17 +115,21 @@ params:
 menu:
   main:
     - identifier: about
-      name: ./about
+      name: ~/about
       url: /about/
       weight: 10
     - identifier: projects
-      name: ./projects
+      name: ~/projects
       url: /projects/
       weight: 20
     - identifier: posts
-      name: ./posts
+      name: ~/posts
       url: /posts
       weight: 20
+    - identifier: talks-and-workshops
+      name: ~/talks-and-workshops
+      url: /talks-and-workshops
+      weight: 30
 
 markup:
   goldmark:
