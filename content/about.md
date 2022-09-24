@@ -21,7 +21,7 @@ Hi folks! I am Nihar Sanda a Computer science undergrad from IIIT Dharwad. I am 
 
 # Extra-Curricular Activites
 
-- President of Velocity (Web Development Club), IIIT Dharwad
+- President of Velocity (Web and App Development Club), IIIT Dharwad
 - Events Management Head of E-Cell, IIIT Dharwad
 - Webmaster of IEEE Computer Society, Banglore Section.
 - Core Committee Member of Data Science and Artificial Intelligence (DSAI) Society, IIIT Dharwad

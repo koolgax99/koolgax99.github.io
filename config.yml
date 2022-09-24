@@ -43,11 +43,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "nihar-sanda.webp"
-    favicon16x16: "nihar-sanda.webp"
-    favicon32x32: "nihar-sanda.webp"
-    apple_touch_icon: "nihar-sanda.webp"
-    safari_pinned_tab: "nihar-sanda.webp"
+    favicon: "nihar.jpg"
+    favicon16x16: "nihar.jpg"
+    favicon32x32: "nihar.jpg"
+    apple_touch_icon: "nihar.jpg"
+    safari_pinned_tab: "nihar.jpg"
 
   label:
     text: "Koolgax99"
@@ -57,19 +57,19 @@ params:
     enabled: true # needs to be explicitly set
     title: Nihar Sanda
     # subtitle: "Hi, I am Nihar Sanda"
-    imageUrl: "nihar-sanda.webp"
+    imageUrl: "nihar.jpg"
     imageWidth: 250
     imageHeight: 250
     imageTitle: Nihar Sanda
     buttons:
       - name: Resume
-        url: "NiharSanda.pdf"
+        url: "Nihar_Sanda_Resume.pdf"
       - name: About
         url: about
       - name: Projects
         url: projects
-      - name: 66daysofdata
-        url: posts/journey-of-66-days-of-data
+      - name: Talks
+        url: talks-and-workshops
 
   socialIcons: # optional
     - name: Github
@@ -115,25 +115,17 @@ params:
 menu:
   main:
     - identifier: about
-      name: about
+      name: ./about
       url: /about/
       weight: 10
     - identifier: projects
-      name: projects
+      name: ./projects
       url: /projects/
       weight: 20
     - identifier: posts
-      name: posts
+      name: ./posts
       url: /posts
       weight: 20
-    - identifier: Camp+
-      name: Camp+
-      url: https://camplus.network/
-      weight: 30
-    - identifier: 66daysofdata
-      name: 66daysofdata
-      url: /posts/journey-of-66-days-of-data/
-      weight: 30
 
 markup:
   goldmark:
