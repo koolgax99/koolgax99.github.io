@@ -48,6 +48,7 @@ params:
     favicon32x32: "nihar.jpg"
     apple_touch_icon: "nihar.jpg"
     safari_pinned_tab: "nihar.jpg"
+    disableFingerprinting: true
 
   label:
     text: "Koolgax99"
