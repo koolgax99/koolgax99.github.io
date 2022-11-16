@@ -54,6 +54,8 @@ The pagination was not up to the mark for the API's as it was not showing approp
 - For `/api/workflows/` the response now is `"next_page": "http://api.pecan.localhost:8000/api/workflows/?offset=50&limit=50"`
 - For `/api/runs/` the response now is `"next_page": "http://api.pecan.localhost:8000/api/runs/?offset=50&limit=50"`
 
+[**Pull Request #2952**](https://github.com/PecanProject/pecan/pull/2952)
+
 ### Adding the Posterior API's
 
 A new API package was added this summer which contains the API's for the posterior data. The API's are as follows:
@@ -72,6 +74,8 @@ This api returns the porterior file that is mentioned by the user. The input par
 
 - **posterior_id**: The ID of the posterior file that is to be listed.
 - **filename** (optional): The name of the file that is to be listed. Default is Null. filename specified if the id points to a folder instead of file (character). If this is passed with an id that actually points to a file, this name will be ignored.
+
+[**Pull Request #2953**](https://github.com/PecanProject/pecan/pull/2953)
 
 ### Extending the Workflow API's
 
@@ -102,6 +106,9 @@ The input parameters of the API are:
 
 As you can see in the image above, on hitting the request a successful respnse will give you a `output.zip` file consisting of the files that were specified in the body.
 
+[**Pull Request #2962**](https://github.com/PecanProject/pecan/pull/2962)
+
+
 ### API Key Authentication for API's
 
 Earlier the PEcAn API had an authentication of username and password, but this becomes a tedious task. But now, using the API key authentication the user will just have to send the `API_KEY` in the header and if the API_key matches the one in the database then the user will be authenticated.
@@ -111,6 +118,9 @@ The additional feature is to only authenticate the API's which are having the `P
 The `API_KEY` can be found with `apikey` as the parameter in the `users` table of the PEcAn database. The `API_KEY` is a 32 character long string.
 
 This authentication can be useful to track user metrics in the future, and also to prevent the user from making too many requests to the API's.
+
+[**Pull Request #3013**](https://github.com/PecanProject/pecan/pull/3013)
+
 
 ### Meta-Analysis API
 
@@ -291,6 +301,15 @@ The output of this API is a content from the ` post.distns.MA.Rdata` file. A sam
   ]
 }
 ```
+[**Pull Request #3053**](https://github.com/PecanProject/pecan/pull/3053)
+
+### SDA ENKF Multisite (WIP)
+This is a `POST` and `GET` API for the PEcAn's `sda.enkf.multisite` function in the State Data Assimilation package. This function allows for assimilation of observed data at multiple sites at the same time. It is currently in progress as we have to discuss about how to parse the inputs via the API.
+
+- The API will take in list inputs of means and covariances.
+
+### PDA Emulator (WIP)
+This is a `POST` and `GET` API for the PEcAn's `pda.emulator` and also for the `pda.emulator.ms` function in the Parameter Data Assimilation package. This function runs the emulator on multiple sites in three modes: local, global, hierarchical.
 
 ## Future Scope
 In future I would be contributing weekly to the PEcAn Porject for the betterment of the community. Also completing the other suggestions that were given to me by the community. I would also be maintaining the PEcAn API packages and thus continue to work with the team to develop many new API's. 
