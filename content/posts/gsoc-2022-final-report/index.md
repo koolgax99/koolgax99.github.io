@@ -7,6 +7,9 @@ tags: ["R", "API", "Backend"]
 categories: ["technology"]
 cover:
   image: "final-report-cover.png"
+  alt: "GSoC Final Report 2022"
+  caption: "GSoC 2022: Final Report | PEcAn Project"
+  relative: false
 #   relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
 
