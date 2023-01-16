@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Understanding Text Classification Using Label Names Only: A Language Model Self-Training Approach</title>
+      <link>https://koolgax99.github.io/posts/weak-supervision/</link>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://koolgax99.github.io/posts/weak-supervision/</guid>
+      <description>Understanding the research paper on Text classification using label names with the help of a Language Model.</description>
+    </item>
+    
+    <item>
       <title>Fruits Image Classifier using VGG16</title>
       <link>https://koolgax99.github.io/posts/fruits-image-classifier-using-vgg16/</link>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
