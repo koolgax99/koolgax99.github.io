@@ -1,7 +1,7 @@
 ---
 author: "Nihar Sanda"
 title: "Understanding Text Classification Using Label Names Only: A Language Model Self-Training Approach"
-date: "2023-01-17"
+date: "2023-01-16"
 description: "Understanding the research paper on Text classification using label names with the help of a Language Model."
 tags: ["NLP", "ML", "AI"]
 categories: ["technology"]
