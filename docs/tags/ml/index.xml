@@ -12,10 +12,10 @@
     <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Text Classification Using Label Names Only: A Language Model Self-Training Approach</title>
-      <link>https://koolgax99.github.io/posts/weak-supervision/</link>
+      <link>https://koolgax99.github.io/posts/weakly-supervised-text-classification-using-bert/</link>
       <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://koolgax99.github.io/posts/weak-supervision/</guid>
+      <guid>https://koolgax99.github.io/posts/weakly-supervised-text-classification-using-bert/</guid>
       <description>Understanding the research paper on Text classification using label names with the help of a Language Model.</description>
     </item>
     
