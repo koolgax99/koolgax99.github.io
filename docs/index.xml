@@ -83,7 +83,16 @@
     </item>
     
     <item>
-      <title>Talks and Wokrshops</title>
+      <title>Research Publications</title>
+      <link>https://koolgax99.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://koolgax99.github.io/publications/</guid>
+      <description>My research publications across various conferences and journals.</description>
+    </item>
+    
+    <item>
+      <title>Talks and Workshops</title>
       <link>https://koolgax99.github.io/talks-and-workshops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

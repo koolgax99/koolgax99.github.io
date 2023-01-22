@@ -69,11 +69,13 @@ params:
         url: about
       - name: Projects
         url: projects
+      - name: Publications
+        url: publications
       - name: Talks
         url: talks-and-workshops
 
   socialIcons: # optional
-    - name: Github
+    - name: Github 
       url: "https://github.com/koolgax99"
     - name: "Twitter"
       url: "https://twitter.com/nsanda10"
@@ -127,10 +129,14 @@ menu:
       name: ~/posts
       url: /posts
       weight: 20
-    - identifier: talks-and-workshops
-      name: ~/talks-and-workshops
+    - identifier: talks
+      name: ~/talks
       url: /talks-and-workshops
       weight: 30
+    - identifier: publications
+      name: ~/publications
+      url: /publications
+      weight: 40
 
 markup:
   goldmark:

@@ -1,5 +1,5 @@
 ---
-title: "Talks and Wokrshops" # in any language you want
+title: "Talks and Workshops" # in any language you want
 layout: "talks" # is necessary
 language: en
 url: "/talks-and-workshops"
