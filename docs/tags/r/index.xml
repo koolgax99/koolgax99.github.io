@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on koolgax99</title>
     <link>https://koolgax99.github.io/tags/r/</link>
     <description>Recent content in R on koolgax99</description>
-    <image>
-      <url>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -16,7 +12,11 @@
       <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://koolgax99.github.io/posts/gsoc-2022-final-report/</guid>
-      <description>Documenting my complete GSoC journey with PEcAn Project.</description>
+      <description>Project Summary Organization: PEcAn Project
+Mentors: Rob Kooper(@robkooper), Istem Fer(@istfer)
+Student: Nihar Sanda(https://koolgax99.github.io)(@koolgax99)
+My Proposal The project aims at improving and extending the current PEcAn REST API&amp;rsquo;s by making it more robust and dynamic from the user&amp;rsquo;s perspective. The security of the API&amp;rsquo;s will also be improved by introducing API KEY management system, rate limitng and input validation.
+Pre-GSoC Period This period was mainly focused on understanding the codebase of the PEcAn Project and the current state of the API&amp;rsquo;s.</description>
     </item>
     
   </channel>
