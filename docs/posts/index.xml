@@ -10,7 +10,16 @@
       <link>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://koolgax99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Happy Birthday Arushi🎉🚀</title>
+      <link>https://koolgax99.github.io/posts/happy-birthday-ashi/</link>
+      <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://koolgax99.github.io/posts/happy-birthday-ashi/</guid>
+      <description>Documenting my birthday wishes to my homeboi Ashi</description>
+    </item>
+    
     <item>
       <title>Understanding Text Classification Using Label Names Only: A Language Model Self-Training Approach</title>
       <link>https://koolgax99.github.io/posts/weakly-supervised-text-classification-using-bert/</link>
