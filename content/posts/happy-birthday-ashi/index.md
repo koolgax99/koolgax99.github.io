@@ -1,7 +1,7 @@
 ---
 author: "Nihar Sanda"
 title: "Happy Birthday Arushi🎉🚀"
-date: "2023-05-18"
+date: "2023-05-17"
 description: "Documenting my birthday wishes to my homeboi Ashi"
 #   relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
