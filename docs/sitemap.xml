@@ -2,34 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://koolgax99.github.io/categories/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/tags/data-science/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/tags/data-visualisation/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/posts/gsoc-2023-final-report/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/posts/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/tags/r/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/tags/r-shiny/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/tags/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://koolgax99.github.io/categories/technology/</loc>
+    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://koolgax99.github.io/archives-jkrkvb/</loc>
     <lastmod>2023-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/archives-jkrkvb/happy-birthday-ashi/</loc>
     <lastmod>2023-05-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://koolgax99.github.io/</loc>
-    <lastmod>2023-05-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://koolgax99.github.io/tags/ai/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://koolgax99.github.io/categories/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/tags/ml/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/tags/nlp/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://koolgax99.github.io/posts/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://koolgax99.github.io/tags/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://koolgax99.github.io/categories/technology/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/posts/weakly-supervised-text-classification-using-bert/</loc>
@@ -42,9 +57,6 @@
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/posts/gsoc-2022-final-report/</loc>
-    <lastmod>2022-11-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://koolgax99.github.io/tags/r/</loc>
     <lastmod>2022-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://koolgax99.github.io/categories/business/</loc>
