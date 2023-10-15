@@ -131,7 +131,7 @@ The Multi-Site Error Plot function enables the visualization and comparison of e
 
 ### SDA Dashboard
 
-During my GSoC project, a significant emphasis was placed on rendering the plots in a dynamic manner. In this context, the plots are not preloaded with data upon initialization. Instead, users are required to upload a specific .Rdata file directly within the dashboard. This file contains the essential data related to various model runs, allowing users to interact with and generate the plots dynamically
+During my GSoC project, a significant emphasis was placed on rendering the plots in a dynamic manner. In this context, the plots are not preloaded with data upon initialization. Instead, users are required to upload a specific `.Rdata` file directly within the dashboard. This file contains the essential data related to various model runs, allowing users to interact with and generate the plots dynamically
 
 <!-- Add table about data specification -->
 
@@ -194,4 +194,4 @@ Google Summer of Code (GSoC) stands as an excellent avenue for students to enhan
 
 I am deeply thankful to my mentors for their consistent support and guidance throughout the program. Their mentorship has been invaluable, and I genuinely appreciate the remarkable opportunity they have provided me. I eagerly anticipate future collaborations with my mentors on open source projects.
 
-Moreover, my heartfelt gratitude goes out to GSoC for affording me the opportunity to immerse myself in the vibrant open source community. This experience has been both enriching and rewarding, and I am enthusiastic about the prospect of continuing my journey within this supportive and innovative community. GSoC has not only enriched my skill set but has also opened doors to a world of collaboration and knowledge sharing.
+Moreover, my heartfelt gratitude goes out to GSoC for giving me the opportunity to immerse myself in the vibrant open source community. This experience has been both enriching and rewarding, and I am enthusiastic about the prospect of continuing my journey within this supportive and innovative community. GSoC has not only enriched my skill set but has also opened doors to a world of collaboration and knowledge sharing.
