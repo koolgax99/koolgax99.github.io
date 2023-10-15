@@ -43,9 +43,7 @@ The Forecasting dashboard currently works on a standard format of EFI data forma
 
 ### Forecasting Dashboard
 
-During GSoC, I focused on making the plots dynamic in the sense that they are not loaded with data initially. To view the plots, the user has to upload the CSV file in the dashboard containing the data to view the plots.
-
-The file specification is as follows for the Forecasting dahsboard. The file input should manadatorily contain the follwong columns in it.
+During my GSoC project, my primary focus was on enhancing the interactivity and user-friendliness of the plots. To achieve this, I implemented a dynamic approach where the plots are not preloaded with data. Instead, users have the flexibility to upload a CSV file directly within the dashboard to access and visualize the plots. This dynamic data loading feature empowers users to explore and interact with the visualizations based on their specific dataset, making the dashboard a versatile and data-driven tool.
 
 <!-- Add table about data specification -->
 
@@ -63,7 +61,7 @@ The file specification is as follows for the Forecasting dahsboard. The file inp
     </figure>
 </div>
 
-The various plots I have tried to inegrate are as follows:
+The various plots that I have tried to integrate are as follows:
 
 #### Forecasting Plot
 
@@ -89,7 +87,7 @@ This plot is designed to create scatter plots that visualize the relationship be
 
 #### Error Plot
 
-The error_plot function is designed to create error plots that visualize the errors or discrepancies between predicted and observed values for a specific environmental variable and site. It provides insight into the accuracy of predictions by showing how the model's forecasts differ from actual observations over time.
+The Error plot function is designed to create error plots that visualize the errors or discrepancies between predicted and observed values for a specific environmental variable and site. It provides insight into the accuracy of predictions by showing how the model's forecasts differ from actual observations over time.
 
 <div style="text-align: center;">
     <figure>
@@ -133,9 +131,7 @@ The Multi-Site Error Plot function enables the visualization and comparison of e
 
 ### SDA Dashboard
 
-During GSoC, I focused on making the plots dynamic in the sense that they are not loaded with data initially. To view the plots, the user has to upload the .Rdata file in the dashboard containing the data of the various model runs to view the plots.
-
-The file specification is as follows for the Forecasting dahsboard. The file input should manadatorily contain the following columns in it.
+During my GSoC project, a significant emphasis was placed on rendering the plots in a dynamic manner. In this context, the plots are not preloaded with data upon initialization. Instead, users are required to upload a specific .Rdata file directly within the dashboard. This file contains the essential data related to various model runs, allowing users to interact with and generate the plots dynamically
 
 <!-- Add table about data specification -->
 
@@ -157,11 +153,11 @@ The various plots I have tried to inegrate are as follows:
 
 #### SDA Multi-Grid Plots
 
-The sda_analysis_plot function is a powerful tool for conducting comprehensive analysis and visualization of site-based environmental data. It caters to scenarios where data sources provide forecasts, analyzed results, and observed values for multiple environmental variables, measured at various sites and time points. The primary goal of this function is to enable users to evaluate the performance of forecasting models and conduct comparative analyses between the forecasts, analysis results, and actual observations.
+The SDA Analysis plot function is a powerful tool for conducting comprehensive analysis and visualization of site-based environmental data. It caters to scenarios where data sources provide forecasts, analyzed results, and observed values for multiple environmental variables, measured at various sites and time points. The primary goal of this function is to enable users to evaluate the performance of forecasting models and conduct comparative analyses between the forecasts, analysis results, and actual observations.
 
 Key functionalities of the sda_analysis_plot function include:
 
-- Data Integration: It processes a list of data sources, which typically contain three categories of information: "FORECAST," "ANALYSIS," and "OBS" (observed data). These sources encompass site-specific forecasts, model analyses, and actual observations.
+- Data Integration: It processes a list of data sources, which typically contain three categories of information: 'FORECAST', 'ANALYSIS', and 'OBS' (observed data). These sources encompass site-specific forecasts, model analyses, and actual observations.
 
 - Statistical Calculations: The function calculates statistics for each data point, including means and confidence intervals, which are vital for assessing the performance of forecasting models. These statistics aid in understanding how well the forecasts and analyses align with observed data.
 
