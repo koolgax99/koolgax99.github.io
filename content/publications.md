@@ -8,6 +8,12 @@ summary: My research publications across various conferences and journals.
 comments: false
 ---
 
+## An Effective Framework for the Prediction of Protein Folds using Natural Language Processing and Evolutionary Features
+- Implemented advanced NLP techniques to improve protein fold recognition for low similarity datasets such as DD, EDD, TG, and SCOPe baseline datasets encompassing diverse amino acid-based protein sequences and their corresponding folds. 
+- Extracted features by utilizing evolutionary PSSM and HMM profiles of protein sequences, and concatenating them with global Convolutional and Skip Bi-gram features. 
+- Implemented BERT and ESM by Meta transformer-based models for classification and achieving an impressive accuracy exceeding 93% across all datasets, surpassing the previous 85% accuracy. 
+- The project has been documented and has been sent to IEEE Transaction in Computational Biology and Bioinformatics where it is currently under review.
+
 ## SQR: High Performance Secure QR System to Filter Against Malicious QR Codes Using Deep Learning Techniques
 
 - Developed a high-performance system for detecting malicious and benign QR codes.
@@ -32,6 +38,7 @@ comments: false
 
 ## Affect Aware Tutoring System in E-Learning systems
 
-- Developed a novel idea of ”Affect Aware Tutor System”.
-- Paper documented and to be submitted in IEEE Transactions in Education Technology.
-
+- Worked on a novel idea in the field of education technology, named ”Affect Aware Tutoring System Using Video Bots”
+- Built a learning management system that collects the click-stream log data of the student, simultaneously captures video and then predicts the user’s affect state for realtime feedback.
+- Developed an optimized transformer-based deep learning model Vision Transformers to predict the user’s affect state. The model was trained on the huge DAiSEE dataset for approximately 300 hours.
+- Paper documented and to be submitted in IEEE Transactions in Learning Technologies.

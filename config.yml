@@ -43,11 +43,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "nihar.jpg"
-    favicon16x16: "nihar.jpg"
-    favicon32x32: "nihar.jpg"
-    apple_touch_icon: "nihar.jpg"
-    safari_pinned_tab: "nihar.jpg"
+    favicon: "nihar.webp"
+    favicon16x16: "nihar.webp"
+    favicon32x32: "nihar.webp"
+    apple_touch_icon: "nihar.webp"
+    safari_pinned_tab: "nihar.webp"
     disableFingerprinting: true
 
   label:
@@ -58,7 +58,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Nihar Sanda
     # subtitle: "Hi, I am Nihar Sanda"
-    imageUrl: "nihar.jpg"
+    imageUrl: "nihar.webp"
     imageWidth: 250
     imageHeight: 250
     imageTitle: Nihar Sanda
