@@ -10,8 +10,16 @@ comments: false
 
 Hello Everyone, these are few of the many projects i have built and developed. 
 
+## Realtime Person Tracking and Re-Identification in Embodied Learning environment (Ongoing)
+Created and annotated a person re-identification dataset for closed-room environment in a embodied learning class. Enhanced accuracy by fine-tuning pre-trained models (TriNet, Siamese networks, OSNet) specific to closed settings. Integrated Re-ID models with advanced object detection (YOLOv8) and motion tracking (Kalman Filters, Particle
+Filter, DeepSORT) 
+
 ## Privacy Protection of Student Video Data through Stylegan-Based Deidentification in Diverse Learning Environments (Ongoing)
-Using various computer vision methods to explore innovative approaches to safeguard student privacy and confidentiality within various educational settings.   
+Using various computer vision methods to explore innovative approaches to safeguard student privacy and confidentiality within various educational settings.
+
+## Protein Fold Recognition
+Implemented advanced NLP techniques to improve protein fold recognition in challenging datasets (DD, EDD, TG, SCOPe) with diverse amino acid sequences and folds. Extracted features using evolutionary PSSM, HMM profiles, and concatenated them with global Convolutional and Skip Bi-gram features. Applied BERT and ESM by Meta for classification, achieving over 93% accuracy across all datasets, surpassing the previous 85% benchmark.
+Code and the paper will be released soon.
 
 ## PEcAn SDA and Forecasting Dashboard
 This project is primarily focused on creating an interactive display of the carbon cycle forecast and data assimilation system of PEcAn. The main goal is to revive the site-specific R Shiny Forecasting and SDA dashboard that is no longer operational and broaden its scope to cover a larger number of sites. Additionally, the plan is to construct a new comprehensive dashboard that combines both SDA and Forecasting graphs. Moreover, the proposal also aims to establish an automated notification email system for the visualizations.
@@ -22,6 +30,11 @@ More information can be found [here](https://koolgax99.github.io/posts/gsoc-2023
 The project aims at improving and extending the current PEcAn REST API's by making it more robust and dynamic from the user's perspective. The security of the API's will also be improved by introducing API KEY management system, rate limitng and input validation.
 
 More information can be found [here](https://koolgax99.github.io/posts/gsoc-2022-final-report/)
+
+## Affect Aware Tutoring System in E-Learning systems (Pekanu E-Tutor)
+
+Worked on a novel idea in the field of education technology, named ”Affect Aware Tutoring System Using Video Bots”.Built a learning management system that collects the click-stream log data of the student, simultaneously captures video and then predicts the user’s affect state for realtime feedback. Developed an optimized transformer-based deep learning model Vision Transformers to predict the user’s affect state. The model was trained on the huge DAiSEE dataset for approximately 300 hours. Paper documented and to be submitted in IEEE Transactions in Learning Technologies.
+The code will be open sourced soon. 
 
 ## Covid-19 Mortality Prediction
 Data analysis and processing: Proficient in cleaning, exploring, and transforming private hospital data with 1 lakh data points to better understand and extract information using Pandas and Python. Data Imbalance Mitigation: Employed techniques such as SMOTE and undersampling to effectively tackle the challenge of imbalanced data. Mortality Prediction: Implemented state-of-the-art machine learning models to predict COVID-19 patient
