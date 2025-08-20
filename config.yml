@@ -1,6 +1,5 @@
 baseURL: "https://koolgax99.github.io/"
 title: koolgax99
-paginate: 5
 theme: PaperMod
 publishDir: "docs"
 
@@ -142,3 +141,5 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+ignoreErrors: ["error-remote-getjson"] 
