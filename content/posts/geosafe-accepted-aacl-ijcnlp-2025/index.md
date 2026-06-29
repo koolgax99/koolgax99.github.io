@@ -5,19 +5,30 @@ date: "2025-12-24"
 description: "Our paper on AI Safety for Geospatial AI has been accepted to ACL Findings. A recap of the work, the contributions, and presenting virtually at AACL-IJCNLP 2025."
 tags: ["AI Safety", "Geospatial AI", "LLM", "NLP", "ACL", "Responsible AI"]
 categories: ["technology"]
+cover:
+  image: "geosafe-title-slide.jpeg"
+  alt: "GeoSAFE: Geospatial Safety Assurance Framework — AACL-IJCNLP 2025, Mumbai"
+  caption: "GeoSAFE title slide at AACL-IJCNLP 2025, Mumbai (Dec 20–24, 2025)"
+  relative: true
 ---
+
+![GeoSAFE Title Slide](geosafe-title-slide.jpeg)
 
 I'm thrilled to announce that our paper on **AI Safety for Geospatial AI** has been accepted to **ACL Findings**! 🎉
 
-Yesterday, I had the privilege of presenting our work virtually at the **AACL-IJCNLP 2025** conference. As LLMs become increasingly integrated into critical applications, AI safety has never been more important — especially when handling sensitive geospatial data and mitigating the associated risks.
+Yesterday, I had the privilege of presenting our work virtually at the **AACL-IJCNLP 2025** conference in Mumbai. As LLMs become increasingly integrated into critical applications, AI safety has never been more important — especially when handling sensitive geospatial data and mitigating the associated risks.
+
+![Presenting GeoSAFE virtually at AACL-IJCNLP 2025](geosafe-virtual-presentation.jpeg)
 
 ## What we built
 
 Our contribution introduces three artifacts:
 
-- **GeoSAFE Taxonomy** — a comprehensive framework for categorizing geospatial AI safety concerns, organized into six critical hazard categories.
+- **GeoSAFE Taxonomy** — a comprehensive framework for categorizing geospatial AI safety concerns, organized into six critical hazard categories (Environmental Hazards, Urban Safety, Public Health & Well-Being, Infrastructure Risk, Agriculture & Land Use, and Privacy & Surveillance).
 - **GeoSAFE Dataset** — a curated benchmark of 12,078 LLM-human interaction prompts and responses, annotated for safety evaluation, built with data-centric AI principles to remove bias and improve fairness.
-- **GeoSAFE Model** — a fine-tuned moderation approach (built on LlamaGuard and NeMo Guardrails) that achieves a 97% F1 score and significantly reduces false-safe rates in geospatial AI prompts.
+- **GeoSAFEGuard** — a fine-tuned moderation model (built on LlamaGuard and NeMo Guardrails) that achieves a 97% F1 score and significantly reduces false-safe rates in geospatial AI prompts.
+
+![GeoSAFE methodology: Taxonomy Alignment → Dataset Curation → Finetuning & Evaluation](geosafe-methodology.jpeg)
 
 We evaluated our model against multiple general-purpose models and demonstrated significant improvements in handling geospatial data risks.
 
