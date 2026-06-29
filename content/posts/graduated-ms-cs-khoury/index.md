@@ -1,7 +1,7 @@
 ---
 author: "Nihar Sanda"
 title: "Graduated! Wrapping Up My MS at Khoury College"
-date: "2025-12-15"
+date: "2026-04-30"
 description: "Reflections on two and a half years at Northeastern's Khoury College of Computer Sciences — the research, the honors, the thesis, and the people who made it possible."
 tags: ["Personal", "Graduation", "Northeastern", "Khoury", "Research"]
 categories: ["personal"]
