@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Khoury on koolgax99</title>
+    <link>https://koolgax99.github.io/tags/khoury/</link>
+    <description>Recent content in Khoury on koolgax99</description>
+    <image>
+      <title>koolgax99</title>
+      <url>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://koolgax99.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://koolgax99.github.io/tags/khoury/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graduated! Wrapping Up My MS at Khoury College</title>
+      <link>https://koolgax99.github.io/posts/graduated-ms-cs-khoury/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://koolgax99.github.io/posts/graduated-ms-cs-khoury/</guid>
+      <description>Reflections on two and a half years at Northeastern&amp;#39;s Khoury College of Computer Sciences — the research, the honors, the thesis, and the people who made it possible.</description>
+    </item>
+  </channel>
+</rss>
